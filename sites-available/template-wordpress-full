@@ -43,7 +43,7 @@ server {
         # pass PHP scripts to FastCGI server
         #
         location ~ \.php$ {
-          include snippets/php.conf;
+          include snippets/fastcgi.conf;
         }
 
         # deny access to .htaccess files, if Apache's document root

@@ -20,7 +20,7 @@ server {
                 try_files $uri $uri/ =404;
         }
         location ~ \.php$ {
-          include snippets/php.conf;
+          include snippets/fastcgi.conf;
         }
         location ~ /\.ht {
                 deny all;
