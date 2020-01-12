@@ -1,9 +1,14 @@
-# nGinx Snippets
-## Common Snippets for nGinx
+# nGinx Secured Configuration
+## Tested with nGinx 1.17.7, PHP 7.4.1 using FASTCGI.
 
-Ever needed some drop-in snippets for common web applications? Me too! That's why I've decided to create this small repository
-of ready-made nGinx snippets for you to use with your system. Speed and Security are given priority within all of the snippets.
+Whether you just need a security-focused nGinx configuration, or just examples on how you can tidy up your code. This repository should prove useful to anyone needing a quick and reliable nGinx setup.
 
-With your help, and lots of experimentation, we can bring awareness to the power of nGinx for it's use as a primary webserver!
-
-To use, simply clone the repository and copy all ".conf" files to /etc/nginx/snippets.
+## Features
+- Defaults all DNS traffic to CloudFlare.
+- Defaults all TLS Handshakes to TLSv1.2 and TLSv1.3.
+- ECDH Curves set for security and compatibility (prime256v1, secp384r1, secp521r1).
+- Disables the use of insecure SSL Ciphers.
+- Supports LetsEncrypt acme-challenge.
+- Blocks common SQL injection attacks.
+- Blocks common file injection techniques.
+- Blocks common web-application exploits.
